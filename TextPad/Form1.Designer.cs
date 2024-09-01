@@ -41,7 +41,9 @@
             textBox1.ScrollBars = ScrollBars.Both;
             textBox1.Size = new Size(800, 450);
             textBox1.TabIndex = 0;
-            textBox1.Leave += textBox1_Leave;
+            textBox1.KeyDown += TextBox1_KeyDown;
+            textBox1.Leave += TextBox1_Leave;
+            textBox1.PreviewKeyDown += TextBox1_PreviewKeyDown;
             // 
             // Form1
             // 
